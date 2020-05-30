@@ -21,7 +21,7 @@ setInterval(() => {
   let overplusDayOfMonth = 100 - ((31 - thisDays) / 31) * 100;
   let monthDayPercent = overplusDayOfMonth.toFixed(0) + "%";
   //本周剩余天数百分比
-  let overplusDayOfWeek = ((7 - thisWeek) / 7) * 100;
+  let overplusDayOfWeek = 100 - ((7 - thisWeek) / 7) * 100;
   let weekDayPercent = overplusDayOfWeek.toFixed(0) + "%";
 
   timer[0].innerHTML =
